@@ -13,7 +13,7 @@ user function BRWTAB()
 
     AADD(aRotina, {"Pesquisar"  ,"AxPesqui"    ,0,1})
     AADD(aRotina, {"Visualizar" ,"AxVisual"    ,0,2})
-    AADD(aRotina, {"Importar"    ,"u_MENUPERS()",0,3})
+    AADD(aRotina, {"Importar"   ,"u_ABREARQ()" ,0,3})
     AADD(aRotina, {"Trocar"     ,"AxAltera"    ,0,4})
     AADD(aRotina, {"Excluir"    ,"AxDeleta"    ,0,5})
 

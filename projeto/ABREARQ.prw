@@ -1,12 +1,12 @@
 #INCLUDE 'TOTVS.CH'
 
-/*/{Protheus.doc} MENUPERS
-MENUPERS
+/*/{Protheus.doc} ABREARQ
+ABREARQ
 @type function 
 @author Kesia
 @since 12/10/2021
 /*/
-user function MENUPERS()
+User function ABREARQ()
     Local cDiretorio := ""
 
     cDiretorio := cGetFile("Arquivo CSV |*.csv", "Planilha")

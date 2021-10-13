@@ -16,19 +16,7 @@
 		{
 			"label": "SIGAMDI",
 			"description": "<nil>"
-		},
-		{
-			"label": "u_teste",
-			"description": "<nil>"
-		},
-		{
-			"label": "u_BRWTAB",
-			"description": "<nil>"
-		},
-		{
-			"label": "S",
-			"description": "<nil>"
 		}
 	],
-	"lastProgramExecuted": "S"
+	"lastProgramExecuted": "SIGAMDI"
 }
