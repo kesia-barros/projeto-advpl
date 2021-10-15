@@ -34,7 +34,7 @@ user function MBRSA2()
     Eval(bFiltraBrw)
 
     dbGoTop()
-    mBrowse(6,1,22,75,cAlias,,,,,,aCores )
+    mBrowse(6,1,22,75,cAlias,,,,,,aCores)
 
     EndFilBrw(cAlias, aIndexSA2)
     (cAlias)->(DbCloseArea())

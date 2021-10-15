@@ -11,6 +11,7 @@ User function GRVBANK(aArquivo)
     Local nI := 0
 
     For nI := 1 to Len(aArquivo)
+        Chkfile("ZX0")
         DbSelectArea("ZX0")
         DbSetOrder(2)
         If !DbSeek(xFilial("ZX0")+DToS(aArquivo[nI][2])+aArquivo[nI][1])

@@ -16,6 +16,30 @@
 		{
 			"label": "SIGAMDI",
 			"description": "<nil>"
+		},
+		{
+			"label": "u_RelTxt",
+			"description": "<nil>"
+		},
+		{
+			"label": "s",
+			"description": "<nil>"
+		},
+		{
+			"label": "iga",
+			"description": "<nil>"
+		},
+		{
+			"label": "si",
+			"description": "<nil>"
+		},
+		{
+			"label": "sig",
+			"description": "<nil>"
+		},
+		{
+			"label": "siga",
+			"description": "<nil>"
 		}
 	],
 	"lastProgramExecuted": "SIGAMDI"

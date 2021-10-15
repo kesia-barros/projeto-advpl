@@ -30,14 +30,12 @@ User Function CSVTOARR(cArquivo)
             aAdd(aArqCSV,oFile:GetLine())
         Enddo
         //Fecha o arquivo e finaliza o processamento
-        oFile:Close()
-    Else
-		FWLogMsg("[CSVTOARR]- Nao conseguiu abrir arquivo: "+cValToChar(cArquivo))	
+        oFile:Close()	
     Endif
 
     For nLinha := 1 to Len(aArqCSV)
                 
-        aArqCSV[nLinha] := StrTran(aArqCSV[nLinha],";;","; ;") 
+        aArqCSV[nLinha] := StrTran(aArqCSV[nLinha],";;",";s ;") 
         aColunas 		:= StrTokarr(aArqCSV[nLinha] ,";") 
         aLinha   		:= {}
         
@@ -50,24 +48,15 @@ User Function CSVTOARR(cArquivo)
                 aAdd(aLinha, aColunas[nColuna])  
                 Loop
             EndIf
-            
-            If aColunas[nColuna] == "0"
-                aColunas[nColuna] := 0
-                aAdd(aLinha, aColunas[nColuna])  
-                Loop
-            EndIf
 
-            If ("%" $ aColunas[nColuna])
-                aColunas[nColuna] :=  Val(StrTran(Replace(aColunas[nColuna],"%",""),",","."))
-            ElseIf ("R$" $ aColunas[nColuna])
+
+            If ("R$" $ aColunas[nColuna])
                 cAux1 := StrTran(Replace(aColunas[nColuna],"R$",""),",",";")
                 cAux2 := Val(StrTran(Replace(cAux1,".",""),";","."))
                 aColunas[nColuna] := cAux2
-            ElseIf ("," $ aColunas[nColuna])
-                aColunas[nColuna] := Val(Replace(aColunas[nColuna],",","."))
-            ElseIf aColunas[nColuna] == "#N/D"
-                aColunas[nColuna] := 0 
-            EndIf
+
+            Endif
+    
 
             aAdd(aLinha, aColunas[nColuna]) 
 
