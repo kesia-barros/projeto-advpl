@@ -17,7 +17,7 @@ return
 
 
 /*/{Protheus.doc} Rprint
-Rprint
+Rprint - funcao que imprime o relatorio
 @type function
 @author Kesia
 @since 27/10/2021
