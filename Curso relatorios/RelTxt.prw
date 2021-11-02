@@ -23,7 +23,7 @@ Gerar Arquivo txt
 @author Kesia
 @since 15/10/2021
 /*/
-static function GeraArq(cAlias)
+static function GeraArq()
     Local cDir := "C:\Users\Kesia\Desktop\Relatorios\"
     Local cArq := "Teste_arquivo2.txt"
     Local cAlias := GetNextAlias()
